@@ -1,0 +1,111 @@
+#hero {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  margin-top: 3rem;
+  background-color: #f5f5f5a1;
+}
+
+#hero .hero__one {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+#hero .hero__one h2 {
+  font-size: 4rem;
+}
+#hero .hero__one p {
+  font-size: 1.1rem;
+  color: #c7c7c7;
+}
+#hero .hero__one p span {
+  color: var(--bg-light-blue);
+  cursor: pointer;
+}
+
+#hero .hero__two {
+  width: 60%;
+}
+#hero .hero__two img {
+  width: 100%;
+  border-radius: 15px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: grow;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+#courses {
+  padding: 40px;
+  margin-bottom: 3rem;
+}
+
+#courses h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: cursive;
+}
+
+#courses .cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#courses .cards-container .card {
+  width: 48%;
+  height: 240px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 3px solid var(--bg-gray);
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
+  transition: 0.2s ease-in-out;
+}
+#courses .cards-container .card:hover {
+  transform: translateY(-10px);
+}
+
+#courses .cards-container .card i {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--bg-light-blue);
+}
+#courses .cards-container .card h2 {
+  font-size: 2rem;
+}
+#courses .cards-container .card p {
+  letter-spacing: 2px;
+  line-height: 20px;
+  font-weight: 400;
+}
+#courses .cards-container .card a {
+  width: 25%;
+}
+#courses .cards-container .card a i {
+  font-size: 1rem;
+  color: var(--text-light);
+}

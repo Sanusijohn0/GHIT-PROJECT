@@ -38,16 +38,16 @@
   </head>
   <body>
     <header>
-      <nav id="nav">
+      <nav>
         <h1><i class="bi bi-mortarboard"></i>GHIT</h1>
-        <ul>
+        <ul class="navbar-nav">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#service">Service</a></li>
-          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#comment">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#" class="button">Login </a>
+        <a href="#" class="button" id="login-button">Login </a>
         <i class="bi bi-list none" id="navbar-toggler"></i>
       </nav>
       <section id="hero">
@@ -132,8 +132,12 @@
         </div>
       </section>
       <section id="service">
-        <h2>What We Do</h2>
-        <div class="cards-container">
+        <h2 data-aos="slide-left" data-aos-duration="1000">What We Do</h2>
+        <div
+          class="cards-container"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <div class="service-card">
             <i class="bi bi-book-fill"></i>
             <h3>Courses</h3>
@@ -161,6 +165,12 @@
               >Go to Page <i class="bi bi-chevron-right"></i
             ></a>
           </div>
+        </div>
+        <div
+          class="cards-container"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div class="service-card">
             <i class="bi bi-globe"></i>
             <h3>Solar Panel Solutions</h3>
@@ -193,9 +203,230 @@
           </div>
         </div>
       </section>
-    </main>
+      <section id="comment">
+        <div class="comment__one" data-aos="fade-up" data-aos-duration="1000">
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div
+          class="swiper swiper-two"
+          id="slider2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/review-8.png" alt="" width="300" height="200" />
+              <h2>Dera Palmer</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate praesentium molestias consequuntur eius. Aut
+                consequuntur adipisci illum nesciunt error? Eius.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/review-7.png" alt="" width="300" height="200" />
+              <h2>Jamie Carter</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate praesentium molestias consequuntur eius. Aut
+                consequuntur adipisci illum nesciunt error? Eius.
+              </p>
+            </div>
 
+            <div class="swiper-slide">
+              <img src="img/review-5.png" alt="" width="300" height="200" />
+              <h2>Dave Josh</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate praesentium molestias consequuntur eius. Aut
+                consequuntur adipisci illum nesciunt error? Eius.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/review-6.png" alt="" width="300" height="200" />
+              <h2>Angelina Bliss</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate praesentium molestias consequuntur eius. Aut
+                consequuntur adipisci illum nesciunt error? Eius.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact__one">
+          <div>
+            <h2>Contact Us</h2>
+          </div>
+          <div class="one" data-aos="fade-down" data-aos-duration="1000">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d330.7256305221362!2d3.0934019327993143!3d6.4927326072052844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b78a8c235bc41%3A0x64ae5a2879d5ffee!2sBeulah%20Comprehensive%20High%20School%20Morogbo!5e0!3m2!1sen!2sng!4v1735023228482!5m2!1sen!2sng"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="two" data-aos="fade-up" data-aos-duration="1000">
+            <span>
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:contact@ghit.com">contact@ghit.com</a></span
+            >
+
+            <span>
+              <i class="bi bi-phone"></i>
+              <a href="tel:+234 9045678954">(+234) 9045678954</a>
+            </span>
+
+            <div class="icons-container">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter-x"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="contact__two" data-aos="fade-left" data-aos-duration="1000">
+          <div><h2>Send Us a Message</h2></div>
+          <form method="post" action="Database/form.js">
+            <input
+              type="text"
+              name="name"
+              ,
+              id="name"
+              ,
+              placeholder="Your Name"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="subject"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button type="submit" class="button" id="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      <a href="#" class="backtotop"><i class="bi bi-arrow-up"></i></a>
+      <div class="login-form-container none" id="signup-form">
+        <h1>Sign Up</h1>
+        <i class="bi bi-x cancel" id="cancel2"></i>
+        <form action="Database/form.js" class="loginForm">
+          <input
+            type="email"
+            name="login-email"
+            id="login-email"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            name="login-password"
+            id="login-password"
+            placeholder="*********"
+          />
+          <button class="button">Sign Up</button>
+          <div class="icons-container">
+            <i class="bi bi-google"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-github"></i>
+          </div>
+        </form>
+      </div>
+      <div class="login-form-container none" id="login-form">
+        <h1>Login</h1>
+        <i class="bi bi-x cancel" id="cancel"></i>
+        <form action="Database/form.js" class="loginForm">
+          <input
+            type="email"
+            name="login-email"
+            id="login-email"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            name="login-password"
+            id="login-password"
+            placeholder="*********"
+          />
+          <button class="button">Login</button>
+          <div class="icons-container">
+            <i class="bi bi-google"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-github"></i>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="footer__one">
+        <div>
+          <h1>
+            God's Heritage Institute <br />
+            Of Technology
+          </h1>
+        </div>
+        <div class="input-container">
+          <h1>NewsLetter</h1>
+          <input
+            type="email"
+            placeholder="Subscribe to News letter @gmail.com"
+          />
+          <button type="submit" class="button">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer__two">
+        <div>
+          <h2>Get in Touch</h2>
+          <p><i class="bi bi-chevron-right"> 123 beulah street</i></p>
+          <p><i class="bi bi-chevron-right"> +234 90587868</i></p>
+          <p><i class="bi bi-chevron-right">contact@ghit.com</i></p>
+        </div>
+        <div>
+          <h2>Our Services</h2>
+          <p><i class="bi bi-chevron-right"> Solar panel works</i></p>
+          <p><i class="bi bi-chevron-right">Inverter repair</i></p>
+          <p><i class="bi bi-chevron-right">Electronic repairs</i></p>
+          <p><i class="bi bi-chevron-right">House Automation</i></p>
+        </div>
+        <div>
+          <h2>Quick links</h2>
+          <p><i class="bi bi-chevron-right">About US</i></p>
+          <p><i class="bi bi-chevron-right">Courses</i></p>
+          <p><i class="bi bi-chevron-right">Contact US</i></p>
+          <p><i class="bi bi-chevron-right">Products</i></p>
+        </div>
+        <div class="icons-container">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-youtube"></i>
+        </div>
+      </div>
+      <div class="footer__three">
+        <p>&copy; <span>GHIT</span> All rights reserved</p>
+        <p>Designed by <span> Krill Designs & Emmanuelolaoluwa</span></p>
+      </div>
+    </footer>
     <script src="JS/index.js"></script>
+    <script src="Database/database.js"></script>
     <!-- JAVASCRIPT LIBRARIES -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/please-wait/0.0.5/please-wait.min.js"
@@ -230,6 +461,34 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      const swiper2 = new Swiper("#slider2", {
+        direction: "horizontal",
+        draggable: true,
+        touchMove: true,
+        spaceBetween: 50,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
         },
       });
     </script>
