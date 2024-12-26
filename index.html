@@ -47,9 +47,18 @@
           <li><a href="#comment">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#" class="button" id="login-button">Login </a>
+        <div class="button-wrapper">
+          <i class="bi bi-person-fill admin" id="admin"></i>
+          <a href="personal.html"><i class="bi bi-cart"></i></a>
+        </div>
         <i class="bi bi-list none" id="navbar-toggler"></i>
       </nav>
+      <div class="info none">
+        <h4>UserId: <span id="UserId"></span></h4>
+        <h4>FullName: <span id="fullName"> </span></h4>
+        <h4>Email: <span id="userEmail"></span></h4>
+        <button class="button">Logout</button>
+      </div>
       <section id="hero">
         <div class="hero__one">
           <h1 data-aos="fade-down" data-aos-duration="1000">Welcome to GHIT</h1>
@@ -157,9 +166,8 @@
             <p>
               Here at GHIT we provide quality courses taught by experienced
               instructors, come and experience teaching at it's best. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Fugit, unde?
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Molestias, temporibus.
+              ipsum dolor sit amet consectetur adipisicing elit. Velit illo
+              repellat sunt qui in saepe porro deleniti vitae aut modi.
             </p>
             <a href="products.html" class="link"
               >Go to Page <i class="bi bi-chevron-right"></i
@@ -325,54 +333,6 @@
         </div>
       </section>
       <a href="#" class="backtotop"><i class="bi bi-arrow-up"></i></a>
-      <div class="login-form-container none" id="signup-form">
-        <h1>Sign Up</h1>
-        <i class="bi bi-x cancel" id="cancel2"></i>
-        <form action="Database/form.js" class="loginForm">
-          <input
-            type="email"
-            name="login-email"
-            id="login-email"
-            placeholder="Email"
-          />
-          <input
-            type="password"
-            name="login-password"
-            id="login-password"
-            placeholder="*********"
-          />
-          <button class="button">Sign Up</button>
-          <div class="icons-container">
-            <i class="bi bi-google"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-github"></i>
-          </div>
-        </form>
-      </div>
-      <div class="login-form-container none" id="login-form">
-        <h1>Login</h1>
-        <i class="bi bi-x cancel" id="cancel"></i>
-        <form action="Database/form.js" class="loginForm">
-          <input
-            type="email"
-            name="login-email"
-            id="login-email"
-            placeholder="Email"
-          />
-          <input
-            type="password"
-            name="login-password"
-            id="login-password"
-            placeholder="*********"
-          />
-          <button class="button">Login</button>
-          <div class="icons-container">
-            <i class="bi bi-google"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-github"></i>
-          </div>
-        </form>
-      </div>
     </main>
     <!-- FOOTER SECTION -->
     <footer>
@@ -427,6 +387,7 @@
     </footer>
     <script src="JS/index.js"></script>
     <script src="Database/database.js"></script>
+    <script src="Database/form.js"></script>
     <!-- JAVASCRIPT LIBRARIES -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/please-wait/0.0.5/please-wait.min.js"

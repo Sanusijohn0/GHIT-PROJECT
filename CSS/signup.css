@@ -1,0 +1,108 @@
+body {
+  background: #dfdada;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1.4rem;
+  background-color: #fff;
+  width: 400px;
+  height: 400px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 5px #333;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #0a2472;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 8px;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+input:focus {
+  border: none;
+  outline: 2px solid var(--bg-light-blue);
+}
+#signup-button {
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--bg-dark-blue);
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#signup-button:hover {
+  background-color: var(--bg-light-blue);
+}
+
+.for {
+  color: var(--bg-light-blue);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.for:hover,
+.for:focus {
+  color: var(--bg-dark-blue);
+}
+
+.or {
+  font-size: 1rem;
+}
+
+.create {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  width: 30%;
+  text-align: center;
+  background-color: var(--bg-light-blue);
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.create:hover {
+  background-color: var(--bg-dark-blue);
+}
+
+#rember {
+  width: 20px;
+}

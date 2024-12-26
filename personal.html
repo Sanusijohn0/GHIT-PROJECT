@@ -37,7 +37,65 @@
     />
   </head>
   <body>
-    <script src="JS/index.js"></script>
+    <header>
+      <nav>
+        <h1><i class="bi bi-mortarboard"></i>GHIT</h1>
+        <ul class="navbar-nav">
+          <li><a href="/#">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#service">Service</a></li>
+          <li><a href="/#comment">Reviews</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-person-fill admin" id="admin"></i>
+        <i class="bi bi-list none" id="navbar-toggler"></i>
+      </nav>
+      <div class="info none">
+        <h4>UserId: <span></span></h4>
+        <h4>FullName: <span> </span></h4>
+        <h4>Email: <span></span></h4>
+        <button class="button">Logout</button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="courses">
+          <h1>Courses</h1>
+          <div class="box-container">
+            <div class="box-one">
+              <h1>0</h1>
+              <span>Total Pending</span>
+            </div>
+            <div class="box-two">
+              <h1>0</h1>
+              <span>Total Registered</span>
+            </div>
+            <div class="box-three">
+              <h1>0</h1>
+              <span> Reciepts</span>
+            </div>
+          </div>
+        </div>
+        <div class="products">
+          <h1>Products</h1>
+          <div class="box-container">
+            <div class="box-one">
+              <h1>0</h1>
+              <span>Total Pending</span>
+            </div>
+            <div class="box-two">
+              <h1>0</h1>
+              <span>Total Purchased</span>
+            </div>
+            <div class="box-three">
+              <h1>0</h1>
+              <span> Reciepts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="JS/personal.js"></script>
     <!-- JAVASCRIPT LIBRARIES -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/please-wait/0.0.5/please-wait.min.js"
@@ -57,7 +115,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
     <script>
       AOS.init();
     </script>
