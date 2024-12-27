@@ -7,13 +7,14 @@ body {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  row-gap: 1rem;
-  margin: 0 auto;
+  row-gap: 0.5rem;
+  margin: 20px auto;
 }
 
 form {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   row-gap: 1.4rem;
   background-color: #fff;
@@ -25,16 +26,13 @@ form {
 }
 
 h1 {
-  font-size: 2.8rem;
-  color: #0a2472;
+  font-size: 4rem;
+  color: var(--bg-dark-blue);
+  text-align: center;
+  font-family: "Open Sans";
+  margin-left: 15px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 input {
   width: 90%;
   height: 40px;

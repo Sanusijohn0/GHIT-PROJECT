@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <h1>LOGIN</h1>
-      <form>
+      <form id="loginForm">
         <input
           type="email"
           name="user"
@@ -22,14 +22,14 @@
           type="password"
           placeholder="password"
           name="password"
-          id="password"
+          id="loginPassword"
         />
-        <button id="login-button">Login</button>
+        <button id="login-button" type="submit">Login</button>
         <a href="#" class="for"> forgotten password?</a>
         <p class="or">or</p>
         <a href="signup.html" class="create"> create new acount</a>
       </form>
     </div>
-    <script src="../main.js"></script>
+    <script src="Database/login.js"></script>
   </body>
 </html>

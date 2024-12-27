@@ -51,10 +51,10 @@
         <i class="bi bi-list none" id="navbar-toggler"></i>
       </nav>
       <div class="info none">
-        <h4>UserId: <span></span></h4>
-        <h4>FullName: <span> </span></h4>
-        <h4>Email: <span></span></h4>
-        <button class="button">Logout</button>
+        <h4>UserId: <span id="UserId"></span></h4>
+        <h4>FullName: <span id="fullName"> </span></h4>
+        <h4>Email: <span id="userEmail"></span></h4>
+        <button class="button" id="logoutButton">Logout</button>
       </div>
     </header>
     <main>
@@ -117,6 +117,17 @@
     ></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      // Logout Functionality
+      document
+        .getElementById("logoutButton")
+        .addEventListener("click", function () {
+          alert("You have been logged out.");
+
+          // Optionally, redirect to the login page or home page
+          window.location.href = "login.html"; // Redirect to login page
+        });
     </script>
   </body>
 </html>

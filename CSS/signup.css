@@ -25,8 +25,11 @@ form {
 }
 
 h1 {
-  font-size: 2.8rem;
-  color: #0a2472;
+  font-size: 4rem;
+  color: var(--bg-dark-blue);
+  text-align: center;
+  font-family: "Open Sans";
+  margin-left: 15px;
 }
 
 form {
