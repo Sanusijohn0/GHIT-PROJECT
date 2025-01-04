@@ -356,7 +356,7 @@ footer .footer__two .icons-container i {
   color: var(--text-light);
   background-color: var(--bg-light-blue);
   margin-right: 15px;
-  padding: 10spx;
+  padding: 10px;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.2s ease-in-out;
