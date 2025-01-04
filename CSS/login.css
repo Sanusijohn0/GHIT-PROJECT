@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   row-gap: 0.5rem;
   margin: 20px auto;
+  padding: 40px;
 }
 
 form {
@@ -18,7 +19,7 @@ form {
   flex-direction: column;
   row-gap: 1.4rem;
   background-color: #fff;
-  width: 400px;
+  width: 95%;
   height: 400px;
   margin: 10px auto;
   border-radius: 10px;
@@ -100,4 +101,11 @@ input:focus {
 
 #rember {
   width: 20px;
+}
+
+@media (min-width: 1024px) {
+  form {
+    width: 400px;
+    height: 400px;
+  }
 }

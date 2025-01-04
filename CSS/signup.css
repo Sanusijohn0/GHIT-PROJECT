@@ -9,21 +9,8 @@ body {
   flex-direction: column;
   row-gap: 1rem;
   margin: 0 auto;
+  padding: 40px;
 }
-
-form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  row-gap: 1.4rem;
-  background-color: #fff;
-  width: 400px;
-  height: 400px;
-  margin: 10px auto;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px 5px #333;
-}
-
 h1 {
   font-size: 4rem;
   color: var(--bg-dark-blue);
@@ -31,13 +18,20 @@ h1 {
   font-family: "Open Sans";
   margin-left: 15px;
 }
-
 form {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1.4rem;
+  background-color: #fff;
+  width: 95%;
+  height: 400px;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 5px #333;
 }
+
 input {
   width: 90%;
   height: 40px;
@@ -108,4 +102,11 @@ input:focus {
 
 #rember {
   width: 20px;
+}
+
+@media (min-width: 1024px) {
+  form {
+    width: 400px;
+    height: 400px;
+  }
 }
