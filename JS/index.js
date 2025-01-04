@@ -3,12 +3,16 @@ const backToTop = document.querySelector(".backtotop");
 const loginForm = document.getElementById("login-form");
 const admin = document.getElementById("admin");
 const info = document.querySelector(".info");
+const close = document.querySelector("#close");
+const nav2 = document.querySelector(".nav-2");
 
-icon.onclick = () => {
-  icon.classList.toggle("hover");
-  const navItem = document.querySelector(".navbar-nav");
-  navItem.classList.toggle("show");
-};
+icon.addEventListener("click", () => {
+  nav2.style.display = "flex";
+});
+
+close.addEventListener("click", () => {
+  nav2.style.display = "none";
+});
 
 document.addEventListener("scroll", () => {
   backToTop.style.display = "flex";
@@ -32,3 +36,8 @@ if (fullName && email && userId) {
                 <button class="button" id="logoutButton"> Log Out</button>
             `;
 }
+
+const readmore = document.querySelector("#about-read");
+readmore.addEventListener("click", () => {
+  document.querySelector("#last").classList.toggle("last");
+});

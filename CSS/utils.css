@@ -13,19 +13,29 @@
   --bg-gray: rgb(235, 235, 235);
   --text-light: #f8f9fa;
   --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
+  --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
+  --breakpoint-lg: 1024;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 60px;
+  overflow-x: hidden;
 }
 
 body {
   overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 20px;
 }
 
 .none {
@@ -81,7 +91,8 @@ body {
 
 .swiper-two {
   width: 90vw;
-  height: 350px;
+  height: 450px;
+  position: relative;
 }
 
 .backtotop {
@@ -164,7 +175,7 @@ header nav h1 {
   color: var(--bg-dark-blue);
 }
 
-header nav ul {
+header nav .nav-1 {
   display: flex;
   border-radius: 10px;
   padding: 5px;
@@ -173,12 +184,12 @@ header nav ul {
   overflow: hidden;
 }
 
-header nav ul li {
+header nav .nav-1 li {
   list-style: none;
   margin-right: 15px;
 }
 
-header nav ul li a {
+header nav .nav-1 li a {
   text-decoration: none;
   font-size: 1.2rem;
   color: #000;
@@ -187,7 +198,7 @@ header nav ul li a {
   padding-bottom: 3px;
 }
 
-header nav ul li a:hover {
+header nav .nav-1 li a:hover {
   border-bottom: 1px solid var(--bg-light-blue);
 }
 .button-wrapper {
@@ -203,7 +214,7 @@ header nav ul li a:hover {
 .hover {
   border: 2px solid var(--bg-gray);
   box-sizing: content-box;
-  padding: 3px;
+  padding: 2px;
   border-radius: 10px;
 }
 
@@ -219,6 +230,52 @@ header nav ul li a:hover {
   margin-bottom: 4rem;
 }
 
+header .nav-2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  box-shadow: -10px 0 10px #000;
+  padding: 40px 25px;
+  backdrop-filter: blur(10px);
+  display: none;
+}
+
+header .nav-2 li {
+  list-style: none;
+  width: 100%;
+}
+
+header .nav-2 li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000;
+  padding-bottom: 5px;
+  box-sizing: content-box;
+  transition: 0.2s ease-in-out;
+}
+
+header .nav-2 li a:hover {
+  border-bottom: 1px solid var(--bg-light-blue);
+}
+
+header .nav-2 .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+header .nav-2 .close:hover {
+  transform: rotate(180deg);
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -237,6 +294,10 @@ footer .footer__one h1 {
   font-family: cursive;
   letter-spacing: 3px;
   color: var(--bg-light-blue);
+  margin-bottom: 10px;
+}
+footer .footer__one p {
+  letter-spacing: 1px;
 }
 footer .footer__one .input-container h1 {
   margin-bottom: 1rem;
@@ -287,6 +348,9 @@ footer .footer__two p:hover {
 footer .footer__two .icons-container {
   margin-top: 1.5rem;
 }
+footer .footer__two .icons-container h2 {
+  margin-bottom: 2rem;
+}
 footer .footer__two .icons-container i {
   font-size: 1.2rem;
   color: var(--text-light);
@@ -320,4 +384,78 @@ footer .footer__three p span {
 
 footer .footer__three p span:hover {
   color: var(--bg-dark-blue);
+}
+
+@media (max-width: 768px) {
+  header nav {
+    padding: 5px 20px;
+  }
+  header nav h1 {
+    font-size: 2rem;
+  }
+  #navbar-toggler {
+    display: flex;
+    font-size: 2.5rem;
+  }
+
+  header nav .nav-1 {
+    display: none;
+  }
+
+  footer .footer__one {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer__one h1 {
+    font-size: 2rem;
+  }
+  footer .footer__one p {
+    margin-bottom: 1rem;
+  }
+  footer .footer__one .input-container h1 {
+    margin-bottom: 1rem;
+    color: var(--bg-light-blue);
+  }
+  footer .footer__one .input-container input {
+    padding: 20px;
+    width: 95%;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 15px;
+  }
+  footer .footer__one .input-container input:focus {
+    outline: 3px solid var(--bg-light-blue);
+    border: none;
+  }
+
+  footer .footer__one .input-container button {
+    padding: 16px;
+    margin: 10px 4px;
+  }
+
+  footer .footer__two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer .footer__three {
+    padding-top: 40px;
+    border-top: 1px solid #d4d1d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+  }
+  footer .footer__three p {
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    margin-top: 2rem;
+  }
 }

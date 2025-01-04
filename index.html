@@ -40,12 +40,20 @@
     <header>
       <nav>
         <h1><i class="bi bi-mortarboard"></i>GHIT</h1>
-        <ul class="navbar-nav">
+        <ul class="nav-1">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#service">Service</a></li>
           <li><a href="#comment">Reviews</a></li>
           <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="nav-2">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#comment">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="bi bi-x close" id="close"></i>
         </ul>
         <div class="button-wrapper">
           <i class="bi bi-person-fill admin" id="admin"></i>
@@ -59,7 +67,7 @@
         <h4>Email: <span id="userEmail"></span></h4>
         <button class="button" id="logoutButton">Logout</button>
       </div>
-      <section id="hero">
+      <section id="hero" class="container">
         <div class="hero__one">
           <h1 data-aos="fade-down" data-aos-duration="1000">Welcome to GHIT</h1>
           <p data-aos="fade-up" data-aos-duration="1000">
@@ -112,7 +120,7 @@
     </header>
     <!-- MAIN SECTION -->
     <main>
-      <section id="about">
+      <section id="about" class="container">
         <div class="about__one"></div>
         <div class="about__two" data-aos="fade-left" data-aos-duration="1000">
           <h2>About Us</h2>
@@ -124,23 +132,19 @@
             converted to riches, for its the lights that unveilsopportunities.
             With knowledge ideas are incubated and solutions are born.
           </span>
-          <span
+          <span class="last" id="last"
             >What we call commodity trade is actually solution trade and the
             world is waiting to buy the next. We offer practical tecnological
             xourses for kids, undergraduates, graduates, professional and any
             interesed person. We believe in made in nigera by nigerians products
             and services.
           </span>
-          <span class="last">
-            Take advantage of the technological courses we offer you and see
-            your dreams become a reality. we run morning, afternoon and evening
-            sessions; saturdays are dedicated to raising the next generation of
-            engineeres and inventors.</span
-          >
-          <a class="link">Readmore <i class="bi bi-arrow-down"></i></a>
+          <a class="link" id="about-read"
+            >Readmore <i class="bi bi-arrow-down"></i
+          ></a>
         </div>
       </section>
-      <section id="service">
+      <section id="service" class="container">
         <h2 data-aos="slide-left" data-aos-duration="1000">What We Do</h2>
         <div
           class="cards-container"
@@ -183,12 +187,10 @@
             <i class="bi bi-globe"></i>
             <h3>Solar Panel Solutions</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              eos ullam at dolorem rem, facere nihil blanditiis animi.
-              Repudiandae perspiciatis, ipsam delectus blanditiis quia iusto
-              illo natus, debitis numquam doloremque iste voluptas ex quisquam
-              magnam fugit, inventore quae consectetur vero Lorem ipsum dolor
-              sit, amet consectetur adipisicing elit. Optio, repudiandae!
+              Here at GHIT we provide quality courses taught by experienced
+              instructors, come and experience teaching at it's best. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Velit illo
+              repellat sunt qui in saepe porro deleniti vitae aut modi.
             </p>
             <a href="solar/index.html" class="link"
               >Go to Page <i class="bi bi-chevron-right"></i
@@ -198,12 +200,10 @@
             <i class="bi bi-tools"></i>
             <h3>Repairs</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              eos ullam at dolorem rem, facere nihil blanditiis animi.
-              Repudiandae perspiciatis, ipsam delectus blanditiis quia iusto
-              illo natus, debitis numquam doloremque iste voluptas ex quisquam
-              magnam fugit, inventore quae consectetur vero Lorem ipsum dolor
-              sit, amet consectetur adipisicing elit. Optio, repudiandae!
+              Here at GHIT we provide quality courses taught by experienced
+              instructors, come and experience teaching at it's best. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Velit illo
+              repellat sunt qui in saepe porro deleniti vitae aut modi.
             </p>
             <a href="courses.html" class="link"
               >Go to Page <i class="bi bi-chevron-right"></i
@@ -211,7 +211,7 @@
           </div>
         </div>
       </section>
-      <section id="comment">
+      <section id="comment" class="container">
         <div class="comment__one" data-aos="fade-up" data-aos-duration="1000">
           <h2>What Our Customers Say</h2>
         </div>
@@ -267,7 +267,7 @@
           <div class="swiper-button-next"></div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" class="container">
         <div class="contact__one">
           <div>
             <h2>Contact Us</h2>
@@ -342,6 +342,10 @@
             God's Heritage Institute <br />
             Of Technology
           </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+            provident corrupti iste incidunt, dolores debitis.
+          </p>
         </div>
         <div class="input-container">
           <h1>NewsLetter</h1>
@@ -374,6 +378,7 @@
           <p><i class="bi bi-chevron-right">Products</i></p>
         </div>
         <div class="icons-container">
+          <div><h2>Follow Us</h2></div>
           <i class="bi bi-facebook"></i>
           <i class="bi bi-twitter-x"></i>
           <i class="bi bi-instagram"></i>
@@ -382,7 +387,7 @@
       </div>
       <div class="footer__three">
         <p>&copy; <span>GHIT</span> All rights reserved</p>
-        <p>Designed by <span> Krill Designs & Emmanuelolaoluwa</span></p>
+        <p>Designed by <span> Krill Designs & Emmanuel</span></p>
       </div>
     </footer>
     <script src="JS/index.js"></script>
