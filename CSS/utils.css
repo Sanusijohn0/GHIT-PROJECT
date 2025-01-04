@@ -241,7 +241,7 @@ header .nav-2 {
   right: 0;
   z-index: 999999;
   background-color: #fff;
-  box-shadow: -10px 0 10px #000;
+  box-shadow: -2px 0 2px #333;
   padding: 40px 25px;
   display: none;
 }
@@ -356,7 +356,7 @@ footer .footer__two .icons-container i {
   color: var(--text-light);
   background-color: var(--bg-light-blue);
   margin-right: 15px;
-  padding: 7px;
+  padding: 10spx;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.2s ease-in-out;

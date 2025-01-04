@@ -162,6 +162,7 @@
 #comment .swiper-wrapper .swiper-slide img {
   object-fit: cover;
   border-radius: 15px;
+  margin-left: 6px;
 }
 #comment .swiper-wrapper h2 {
   font-size: 2rem;
