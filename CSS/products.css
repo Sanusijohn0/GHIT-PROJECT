@@ -1,63 +1,41 @@
 #hero {
-  padding: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   column-gap: 2rem;
   margin-top: 3rem;
-  background-color: #f5f5f5a1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)),
+    url("https://media.istockphoto.com/id/2157299607/photo/red-warning-sign-over-cardboard-box-safety-and-security-on-sorting-and-storage-lines.webp?a=1&b=1&s=612x612&w=0&k=20&c=pUXNmWvqrDBfJAMGFagDxo7DBouIUO6NiJ2iv3Nn7nw=");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #hero .hero__one {
-  width: 50%;
+  width: 100%;
+  height: 40vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
   flex-direction: column;
   row-gap: 0.5rem;
+  justify-content: center;
 }
 
 #hero .hero__one h2 {
-  font-size: 4rem;
+  font-size: 3rem;
+  color: #fff;
 }
 #hero .hero__one p {
   font-size: 1.1rem;
   color: #c7c7c7;
 }
-#hero .hero__one p span {
-  color: var(--bg-light-blue);
-  cursor: pointer;
-}
 
 #hero .hero__two {
-  width: 60%;
-}
-#hero .hero__two img {
-  width: 100%;
-  border-radius: 15px;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-name: grow;
-}
-
-@keyframes grow {
-  0% {
-    transform: scale(0.9);
-  }
-  70% {
-    transform: scale(1);
-  }
-  90% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(0.9);
-  }
+  display: none;
 }
 
 #products {
-  padding-left: 60px;
-  margin-bottom: 3rem;
+  padding: 40px;
 }
 
 #products h1 {
@@ -69,14 +47,13 @@
 
 #products .cards-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 2rem;
-  column-gap: 4rem;
+  row-gap: 1rem;
 }
 
 #products .cards-container .card {
-  width: 28%;
+  width: 100%;
   height: auto;
   padding: 10px;
   border-radius: 15px;
@@ -142,4 +119,162 @@ span h4 {
 
 #products .cards-container .card .buttons i:hover {
   color: #000;
+}
+
+@media (min-width: 768px) {
+  #products .cards-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  #products .cards-container .card {
+    width: 47%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin-top: 3rem;
+    background-color: #f5f5f5a1;
+  }
+
+  #hero .hero__one {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
+  #hero .hero__one h2 {
+    font-size: 4rem;
+  }
+  #hero .hero__one p {
+    font-size: 1.1rem;
+    color: #c7c7c7;
+  }
+  #hero .hero__one p span {
+    color: var(--bg-light-blue);
+    cursor: pointer;
+  }
+
+  #hero .hero__two {
+    width: 60%;
+  }
+  #hero .hero__two img {
+    width: 100%;
+    border-radius: 15px;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: grow;
+  }
+
+  @keyframes grow {
+    0% {
+      transform: scale(0.9);
+    }
+    70% {
+      transform: scale(1);
+    }
+    90% {
+      transform: scale(0.9);
+    }
+
+    100% {
+      transform: scale(0.9);
+    }
+  }
+
+  #products {
+    padding-left: 60px;
+    margin-bottom: 3rem;
+  }
+
+  #products h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: cursive;
+  }
+
+  #products .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    column-gap: 4rem;
+  }
+
+  #products .cards-container .card {
+    width: 28%;
+    height: auto;
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid var(--bg-gray);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  #products .cards-container .card h2 {
+    margin: 2px 10px;
+    text-align: center;
+  }
+  #products .cards-container .card img {
+    width: 100%;
+    height: auto;
+
+    align-self: center;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+  #products .cards-container .card p {
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: 200;
+  }
+
+  #products .cards-container .card h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  span {
+    margin-bottom: 2px;
+  }
+  span h4 {
+    display: inline-block;
+  }
+  #products .cards-container .card i {
+    color: gold;
+    font-size: 1.2rem;
+  }
+
+  #products .cards-container .card .buttons {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #products .cards-container .card .buttons button {
+    width: 65%;
+  }
+
+  #products .cards-container .card .buttons i {
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+  }
+
+  #products .cards-container .card .buttons i:hover {
+    color: #000;
+  }
 }
