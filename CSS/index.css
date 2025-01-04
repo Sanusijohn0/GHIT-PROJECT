@@ -65,24 +65,6 @@
   letter-spacing: 3px;
 }
 
-#about .about__two h2::before {
-  content: "";
-  position: absolute;
-  bottom: 2%;
-  width: 150px;
-  height: 30px;
-  border-bottom: 10px solid var(--bg-dark-blue);
-}
-#about .about__two h2::after {
-  content: "";
-  position: absolute;
-  top: 65%;
-  left: 0;
-  width: 75px;
-  height: 30px;
-  border-bottom: 10px solid var(--bg-dark-blue);
-}
-
 #about .about__two p {
   font-size: 1.1rem;
   letter-spacing: 2px;
