@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GHIT - Home</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/utils.css" />
+    <!-- CSS LIBRARIES -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/please-wait/0.0.5/please-wait.min.css"
+      integrity="sha512-qHOnOjE4dPoo197XSBBgRB4bcqwiJkbZhvtvX/djtgkzEYLZtI4aods6PRPTNe8Yok1/O0CZnH0SkAvXQx4Vdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><i class="bi bi-mortarboard"></i>GHIT</h1>
+        <ul class="nav-1">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#comment">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="nav-2">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#comment">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="bi bi-x close" id="close"></i>
+        </ul>
+        <div class="button-wrapper">
+          <i class="bi bi-person-fill admin" id="admin"></i>
+          <a href="personal.html"><i class="bi bi-cart"></i></a>
+        </div>
+        <i class="bi bi-list none" id="navbar-toggler"></i>
+      </nav>
+      <div class="info none">
+        <h4>UserId: <span id="UserId"></span></h4>
+        <h4>FullName: <span id="fullName"> </span></h4>
+        <h4>Email: <span id="userEmail"></span></h4>
+        <button class="button" id="logoutButton">Logout</button>
+      </div>
+      <section id="hero" class="container">
+        <div class="hero__one">
+          <h1 data-aos="fade-down" data-aos-duration="1000">Welcome to GHIT</h1>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+            iste magnam fugiat, commodi similique reiciendis vero, porro
+            dignissimos, quam nemo asperiores. Labore fugit adipisci, quia
+            consequatur blanditiis quisquam quidem. Ab.
+          </p>
+          <a href="#" class="link" data-aos="fade-up" data-aos-duration="1000"
+            >Readmore <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+        <div
+          class="hero__two swiper"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://media.istockphoto.com/id/1483272796/photo/seminar-coding-talking.jpg?s=1024x1024&w=is&k=20&c=L7yKxE2ufFY1-plz5JtX_GnhQFJB4VaHbHYWQAP6WNk="
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://media.istockphoto.com/id/2174431705/photo/african-american-businessman-delivers-a-compelling-presentation-of-his-business-strategy-to.jpg?s=1024x1024&w=is&k=20&c=IzeHAfVDTGVs_X_o7_lyipi3NeSsCIWtq73MIROKMik="
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://media.istockphoto.com/id/1277114833/photo/modern-school-with-solar-panels.webp?a=1&b=1&s=612x612&w=0&k=20&c=TWB-GxugFmqrO8GY4YPMHHSlOCDniJKZASZfS3Dgkdk="
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://media.istockphoto.com/id/1480548286/photo/young-teacher-with-solar-panel-learning-pupils-about-solar-energy.webp?a=1&b=1&s=612x612&w=0&k=20&c=q17WLlANBIy9SQCJjkKZm3Fe5RFrPtl7kBeaV9DP0to="
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </header>
+    <!-- MAIN SECTION -->
+    <main>
+      <section id="about" class="container">
+        <div class="about__one">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1663075847012-c781e0d194ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVhY2hlciUyMHRlYWNoaW5nJTIwc3R1ZGVudHMlMjBjb2Rpbmd8ZW58MHx8MHx8fDA%3D"
+            alt=""
+          />
+        </div>
+        <div class="about__two" data-aos="fade-left" data-aos-duration="1000">
+          <h2>About Us</h2>
+          <p>Home Of Knowlege</p>
+          <span
+            >A lot of people say nigerians is full of problems. we say where
+            there are problems there are opportunities for wealth. Without
+            knowledge, opportunities in every problem cannot be seen or
+            converted to riches, for its the lights that unveilsopportunities.
+            With knowledge ideas are incubated and solutions are born.
+          </span>
+          <span class="last" id="last"
+            >What we call commodity trade is actually solution trade and the
+            world is waiting to buy the next. We offer practical tecnological
+            xourses for kids, undergraduates, graduates, professional and any
+            interesed person. We believe in made in nigera by nigerians products
+            and services.
+          </span>
+          <a class="link" id="about-read"
+            >Readmore <i class="bi bi-arrow-down"></i
+          ></a>
+        </div>
+      </section>
+      <section id="service" class="container">
+        <h2 data-aos="slide-left" data-aos-duration="1000">What We Do</h2>
+        <div
+          class="cards-container"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <div class="service-card">
+            <i class="bi bi-book-fill"></i>
+            <h3>Courses</h3>
+            <p>
+              Here at GHIT we provide quality courses taught by experienced
+              instructors, come and experience teaching at it's best. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Velit illo
+              repellat sunt qui in saepe porro deleniti vitae aut modi.
+            </p>
+            <a href="courses.html" class="link"
+              >Go to Page <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-box-fill"></i>
+            <h3>Products</h3>
+            <p>
+              Here at GHIT we provide quality courses taught by experienced
+              instructors, come and experience teaching at it's best. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Velit illo
+              repellat sunt qui in saepe porro deleniti vitae aut modi.
+            </p>
+            <a href="products.html" class="link"
+              >Go to Page <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          class="cards-container"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="service-card">
+            <i class="bi bi-globe"></i>
+            <h3>Solar Panel Solutions</h3>
+            <p>
+              Here at GHIT we provide quality courses taught by experienced
+              instructors, come and experience teaching at it's best. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Velit illo
+              repellat sunt qui in saepe porro deleniti vitae aut modi.
+            </p>
+            <a href="solar/index.html" class="link"
+              >Go to Page <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+          <div class="service-card">
+            <i class="bi bi-tools"></i>
+            <h3>Repairs</h3>
+            <p>
+              Here at GHIT we provide quality courses taught by experienced
+              instructors, come and experience teaching at it's best. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Velit illo
+              repellat sunt qui in saepe porro deleniti vitae aut modi.
+            </p>
+            <a href="courses.html" class="link"
+              >Go to Page <i class="bi bi-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="comment" class="container">
+        <div class="comment__one" data-aos="fade-up" data-aos-duration="1000">
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div
+          class="swiper swiper-two"
+          id="slider2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/review-8.png" alt="" width="300" height="200" />
+              <h2>Dera Palmer</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate praesentium molestias consequuntur eius. Aut
+                consequuntur adipisci illum nesciunt error? Eius.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/review-7.png" alt="" width="300" height="200" />
+              <h2>Jamie Carter</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate praesentium molestias consequuntur eius. Aut
+                consequuntur adipisci illum nesciunt error? Eius.
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="img/review-5.png" alt="" width="300" height="200" />
+              <h2>Dave Josh</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate praesentium molestias consequuntur eius. Aut
+                consequuntur adipisci illum nesciunt error? Eius.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/review-6.png" alt="" width="300" height="200" />
+              <h2>Angelina Bliss</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cupiditate praesentium molestias consequuntur eius. Aut
+                consequuntur adipisci illum nesciunt error? Eius.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section id="contact" class="container">
+        <div class="contact__one">
+          <div>
+            <h2>Contact Us</h2>
+          </div>
+          <div class="one" data-aos="fade-down" data-aos-duration="1000">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d330.7256305221362!2d3.0934019327993143!3d6.4927326072052844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b78a8c235bc41%3A0x64ae5a2879d5ffee!2sBeulah%20Comprehensive%20High%20School%20Morogbo!5e0!3m2!1sen!2sng!4v1735023228482!5m2!1sen!2sng"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="two" data-aos="fade-up" data-aos-duration="1000">
+            <span>
+              <i class="bi bi-envelope"></i>
+              <a href="mailto:contact@ghit.com">contact@ghit.com</a></span
+            >
+
+            <span>
+              <i class="bi bi-phone"></i>
+              <a href="tel:+234 9045678954">(+234) 9045678954</a>
+            </span>
+
+            <div class="icons-container">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter-x"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="contact__two" data-aos="fade-left" data-aos-duration="1000">
+          <div><h2>Send Us a Message</h2></div>
+          <form method="post" action="Database/form.js">
+            <input
+              type="text"
+              name="name"
+              ,
+              id="name"
+              ,
+              placeholder="Your Name"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="subject"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button type="submit" class="button" id="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      <a href="#" class="backtotop"><i class="bi bi-arrow-up"></i></a>
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="footer__one">
+        <div>
+          <h1>
+            God's Heritage Institute <br />
+            Of Technology
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+            provident corrupti iste incidunt, dolores debitis.
+          </p>
+        </div>
+        <div class="input-container">
+          <h1>NewsLetter</h1>
+          <input
+            type="email"
+            placeholder="Subscribe to News letter @gmail.com"
+          />
+          <button type="submit" class="button">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer__two">
+        <div>
+          <h2>Get in Touch</h2>
+          <p><i class="bi bi-chevron-right"> 123 beulah street</i></p>
+          <p><i class="bi bi-chevron-right"> +234 90587868</i></p>
+          <p><i class="bi bi-chevron-right">contact@ghit.com</i></p>
+        </div>
+        <div>
+          <h2>Our Services</h2>
+          <p><i class="bi bi-chevron-right"> Solar panel works</i></p>
+          <p><i class="bi bi-chevron-right">Inverter repair</i></p>
+          <p><i class="bi bi-chevron-right">Electronic repairs</i></p>
+          <p><i class="bi bi-chevron-right">House Automation</i></p>
+        </div>
+        <div>
+          <h2>Quick links</h2>
+          <p><i class="bi bi-chevron-right">About US</i></p>
+          <p><i class="bi bi-chevron-right">Courses</i></p>
+          <p><i class="bi bi-chevron-right">Contact US</i></p>
+          <p><i class="bi bi-chevron-right">Products</i></p>
+        </div>
+        <div class="icons-container">
+          <div><h2>Follow Us</h2></div>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-youtube"></i>
+        </div>
+      </div>
+      <div class="footer__three">
+        <p>&copy; <span>GHIT</span> All rights reserved</p>
+        <p>Designed by <span> Krill Designs & Emmanuel</span></p>
+      </div>
+    </footer>
+    <script src="JS/index.js"></script>
+    <script src="Database/database.js"></script>
+    <!-- JAVASCRIPT LIBRARIES -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/please-wait/0.0.5/please-wait.min.js"
+      integrity="sha512-mEe6gLbPz5ZrXPgwBNL6KSNLjE1zvv4G31w/UdsGkaYrmFBLhGRH4iRI5SeoUppqdq/Ydn5A+ctDO2felJ8p5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"
+      integrity="sha512-hRhHH3+D9xVKPpodEiYzHWIG8CWbCjp7LCdZ00K3/6xsdC3iT0OlPJLIwxSMEl07gya1Ae8iAqXjMMLpzqqh0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      const swiper2 = new Swiper("#slider2", {
+        direction: "horizontal",
+        draggable: true,
+        touchMove: true,
+        spaceBetween: 50,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      // Logout Functionality
+      document
+        .getElementById("logoutButton")
+        .addEventListener("click", function () {
+          alert("You have been logged out.");
+
+          // Optionally, redirect to the login page or home page
+          window.location.href = "login.html"; // Redirect to login page
+        });
+    </script>
+  </body>
+</html>
