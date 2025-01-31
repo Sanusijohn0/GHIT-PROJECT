@@ -143,6 +143,7 @@
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: 200;
+  margin-bottom: 5px;
 }
 
 .electronics-courses .card h4 {
@@ -205,6 +206,7 @@ span p {
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: 200;
+  margin-bottom: 5px;
 }
 
 .graphics-courses .card h4 {
@@ -265,6 +267,7 @@ span h4 {
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: 200;
+  margin-bottom: 5px;
 }
 
 .power-courses .card h4 {
@@ -328,6 +331,7 @@ span h4 {
   letter-spacing: 2px;
   line-height: 20px;
   font-weight: 200;
+  margin-bottom: 5px;
 }
 
 .computer-courses .card h4 {

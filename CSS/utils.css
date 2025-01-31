@@ -111,6 +111,7 @@ body {
   top: 530px;
   transition: 0.2s ease-in-out;
   display: none;
+  z-index: 999999999999;
 }
 
 .backtotop:hover {
@@ -182,11 +183,10 @@ header nav h1 {
 
 header nav .nav-1 {
   display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
   padding: 5px;
-  transition: max-height 0.3s ease;
-  max-height: 200px;
-  overflow: hidden;
 }
 
 header nav .nav-1 li {
@@ -254,6 +254,10 @@ header .nav-2 {
 header .nav-2 li {
   list-style: none;
   width: 100%;
+  margin-top: 10px;
+}
+header .nav-2 li:first-child {
+  margin-top: 15px;
 }
 
 header .nav-2 li a {
