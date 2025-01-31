@@ -123,6 +123,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .electronics-courses .card h2 {
@@ -152,12 +153,13 @@
 span {
   margin-bottom: 5px;
 }
-span h4 {
+span p {
   display: inline-block;
+  font-size: 1rem;
 }
 .electronics-courses .card i {
   color: gold;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .graphics-courses {
@@ -183,6 +185,7 @@ span h4 {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .graphics-courses .card h2 {
@@ -219,7 +222,6 @@ span h4 {
   color: gold;
   font-size: 1.5rem;
 }
-
 .power-courses {
   background-color: #fff;
   width: 100vw;
@@ -243,6 +245,7 @@ span h4 {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .power-courses .card h2 {
@@ -304,6 +307,7 @@ span h4 {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
 }
 
 .computer-courses .card h2 {

@@ -5,6 +5,7 @@ const admin = document.getElementById("admin");
 const info = document.querySelector(".info");
 const close = document.querySelector("#close");
 const nav2 = document.querySelector(".nav-2");
+const readmore = document.querySelector("#about-read");
 
 icon.addEventListener("click", () => {
   nav2.style.display = "flex";
@@ -22,6 +23,10 @@ admin.addEventListener("click", () => {
   info.classList.toggle("none");
 });
 
+readmore.addEventListener("click", () => {
+  document.querySelector("#last").classList.toggle("last");
+});
+
 // Retrieve data from local storage
 const name = localStorage.getItem("userName");
 const email = localStorage.getItem("userEmail");
@@ -36,8 +41,3 @@ if (fullName && email && userId) {
                 <button class="button" id="logoutButton"> Log Out</button>
             `;
 }
-
-const readmore = document.querySelector("#about-read");
-readmore.addEventListener("click", () => {
-  document.querySelector("#last").classList.toggle("last");
-});
