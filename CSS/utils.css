@@ -356,22 +356,27 @@ footer .footer__two p:hover {
 }
 footer .footer__two .icons-container {
   margin-top: 1.5rem;
+  display: flex;
 }
 footer .footer__two .icons-container h2 {
   margin-bottom: 2rem;
 }
-footer .footer__two .icons-container i {
-  font-size: 1.2rem;
-  color: var(--text-light);
-  background-color: var(--bg-light-blue);
-  margin-right: 15px;
-  padding: 10px;
+footer .footer__two .icons-container a {
+  font-size: 1.3rem;
+  color: var(--bg-dark-blue);
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.2s ease-in-out;
+  margin-right: 10px;
+  border: 2px solid var(--bg-dark-blue);
 }
-footer .footer__two .icons-container i:hover {
+footer .footer__two .icons-container a:hover {
   background-color: var(--bg-dark-blue);
+  color: var(--text-light);
 }
 footer .footer__three {
   padding-top: 40px;
