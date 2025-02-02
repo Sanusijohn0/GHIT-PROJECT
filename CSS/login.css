@@ -102,10 +102,115 @@ input:focus {
 #rember {
   width: 20px;
 }
+.alert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  background-color: #33333379;
+}
 
+.alert-success {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px #333;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  row-gap: 10px;
+}
+.alert-success i {
+  color: #058d05;
+  font-size: 4rem;
+}
+
+.alert-success h2 {
+  font-size: 2rem;
+  color: #058d05;
+  font-weight: 500;
+}
+
+.alert-success button {
+  width: 100%;
+  padding: 8px;
+  background-color: #058d05;
+}
+.alert-success button:hover,
+.alert-success button:focus {
+  background-color: #057405;
+}
+.alert-container-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  background-color: #33333379;
+}
+.alert-declined {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px #333;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  row-gap: 10px;
+}
+.alert-declined i {
+  color: red;
+  font-size: 4rem;
+}
+
+.alert-declined h2 {
+  font-size: 2rem;
+  color: red;
+  font-weight: 500;
+}
+.alert-declined {
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.alert-declined button {
+  width: 100%;
+  padding: 8px;
+  background-color: red;
+}
+.alert-declined button:hover,
+.alert-declined button:focus {
+  background-color: rgb(226, 10, 10);
+}
 @media (min-width: 1024px) {
   form {
     width: 400px;
     height: 400px;
+  }
+  .alert-success {
+    width: 300px;
+    height: 300px;
+  }
+  .alert-success i {
+    font-size: 4rem;
+  }
+  .alert-declined {
+    width: 300px;
+    height: 300px;
+  }
+  .alert-declined i {
+    font-size: 4rem;
   }
 }

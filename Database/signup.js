@@ -13,7 +13,12 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   // Validate input
   if (fullName.trim() === "" || email.trim() === "" || password.trim() === "") {
-    alert(`Name, email, and password cannot be empty`);
+    document.querySelector(".alert-container-two").classList.remove("none");
+    document
+      .querySelector("#alert-declined-button")
+      .addEventListener("click", () => {
+        document.querySelector(".alert-container-two").classList.add("none");
+      });
     return; // Exit the function if validation fails
   }
 
@@ -23,7 +28,9 @@ document.getElementById("form").addEventListener("submit", function (event) {
   localStorage.setItem("userId", userId);
   localStorage.setItem("userPassword", password); // Store password
 
-  alert("Signup successful! You can now log in.");
-  this.reset(); // Reset the form
-  window.location.href = "login.html"; // Redirect to login page
+  document.querySelector(".alert-container").classList.remove("none");
+  document.querySelector("#alert-button").addEventListener("click", () => {
+    this.reset(); // Reset the form
+    window.location.href = "login.html"; // Redirect to login page
+  });
 });

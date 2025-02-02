@@ -10,9 +10,16 @@ document
     const storedPassword = localStorage.getItem("userPassword");
 
     if (loginEmail === storedEmail && loginPassword === storedPassword) {
-      alert("Login successful!");
-      window.location.href = "personal.html"; // Redirect to home page
+      document.querySelector(".alert-container").classList.remove("none");
+      document.querySelector("#alert-button").addEventListener("click", () => {
+        window.location.href = "personal.html"; // Redirect to home page
+      });
     } else {
-      alert("Invalid email or password.");
+      document.querySelector(".alert-container-two").classList.remove("none");
+      document
+        .querySelector("#alert-declined-button")
+        .addEventListener("click", () => {
+          document.querySelector(".alert-container-two").classList.add("none");
+        });
     }
   });
