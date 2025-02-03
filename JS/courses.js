@@ -80,3 +80,20 @@ if (fullName && email && userId) {
                 <button class="button" id="logoutButton"> Log Out</button>
             `;
 }
+
+//REGISTRATION SCRIPTS
+
+document.querySelectorAll(".register-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const courseElement = button.closest(".course");
+    const courseName = courseElement.getAttribute("data-name");
+    const coursePrice = courseElement.getAttribute("data-price");
+
+    let selectedCourses =
+      JSON.parse(localStorage.getItem("selectedCourses")) || [];
+
+    selectedCourses.push({ name: courseName, price: coursePrice });
+
+    localStorage.setItem("selectedCourses", JSON.stringify(selectedCourses));
+  });
+});
