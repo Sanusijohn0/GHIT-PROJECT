@@ -95,5 +95,12 @@ document.querySelectorAll(".register-button").forEach((button) => {
     selectedCourses.push({ name: courseName, price: coursePrice });
 
     localStorage.setItem("selectedCourses", JSON.stringify(selectedCourses));
+
+    document.querySelector(".registered-successfully").classList.remove("none");
+
+    setTimeout(() => {
+      document.querySelector(".registered-successfully").classList.add("none");
+      form.reset();
+    }, 2000);
   });
 });

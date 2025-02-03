@@ -35,3 +35,7 @@ if (fullName && email && userId) {
                 <button class="button" id="logoutButton"> Log Out</button>
             `;
 }
+
+document.querySelector(".box-one").addEventListener("click", () => {
+  document.location.href = "../register.html";
+});
