@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const selectedCourses =
     JSON.parse(localStorage.getItem("selectedCourses")) || [];
-  const username = localStorage.getItem("username");
-  const email = localStorage.getItem("email");
 
   const courseList = document.getElementById("course-list");
   const totalPriceElement = document.getElementById("total");
@@ -24,7 +22,17 @@ document.addEventListener("DOMContentLoaded", () => {
       let deleteBtn = document.createElement("i");
       deleteBtn.classList.add("bi", "bi-trash-fill", "delete-btn");
 
-      deleteBtn;
+      deleteBtn.addEventListener("click", () => {
+        let price = parseFloat(coursePrice.textContent.replace("$", ""));
+
+        totalPrice -= price;
+
+        document.getElementById("total").textContent = `${totalPrice.toFixed(
+          2
+        )}`;
+
+        listitem.remove();
+      });
 
       listitem.appendChild(courseName);
       listitem.appendChild(coursePrice);
@@ -58,6 +66,8 @@ form.addEventListener("submit", (event) => {
   const cardNumber = document.getElementById("card-number").value;
   const expiry = document.getElementById("expiry").value;
   const cvv = document.getElementById("cvv").value;
+  const name = localStorage.getItem("userName");
+  const email = localStorage.getItem("userEmail");
 
   if (cardNumber.trim() === "" || expiry === "" || cvv === "") {
     document.querySelector(".alert-container-two").style.display = "flex";
@@ -74,5 +84,61 @@ form.addEventListener("submit", (event) => {
   setTimeout(() => {
     document.querySelector(".payment-successful").classList.add("none");
     form.reset();
+    localStorage.removeItem("selectedCourses");
+    document.getElementById("course-list").textContent = "";
+    document.getElementById("total").textContent = "$ 0.00";
   }, 4000);
+
+  localStorage.removeItem("pendingCount");
+
+  let count = parseInt(localStorage.getItem("successCount") || "0");
+
+  count++;
+
+  localStorage.setItem("successCount", count);
+
+  const { jsPDF } = window.jspdf;
+  const courses = [
+    {
+      name: "Course 1",
+      price: "",
+    },
+    {
+      name: "Course 2",
+      price: "",
+    },
+    {
+      name: "Course 3",
+      price: "",
+    },
+  ];
+
+  const doc = new jsPDF();
+
+  doc.setFontSize(18);
+  doc.text("Registration Reciept", 14, 20);
+
+  doc.setFontSize(12);
+  doc.text(`Name: ${name}`, 14, 30);
+  doc.text(`Email: ${email}`, 14, 40);
+
+  let yPosition = 50;
+  courses.forEach((course) => {
+    doc.text(`${course.name}: $${course.price}`, 14, yPosition);
+    yPosition += 10;
+  });
+
+  const total = courses.reduce((acc, course) => acc + course.price, 0);
+  doc.text(`Total: 0.00`, 14, yPosition + 10);
+
+  const CurrentTIme = new Date();
+  const hours = String(CurrentTIme.getHours()).padStart(2, 0);
+  const minutes = String(CurrentTIme.getMinutes()).padStart(2, 0);
+  const seconds = String(CurrentTIme.getUTCSeconds()).padStart(2, 0);
+
+  const formattedTime = `${hours}_${minutes}_${seconds}`;
+
+  const fileName = `$reciept_${formattedTime}.pdf`;
+
+  doc.save(fileName);
 });

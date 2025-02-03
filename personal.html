@@ -73,11 +73,11 @@
           <h1>Courses</h1>
           <div class="box-container">
             <div class="box-one">
-              <h1>1</h1>
+              <h1 id="pending-count">0</h1>
               <span>Total Pending</span>
             </div>
             <div class="box-two">
-              <h1>0</h1>
+              <h1 id="success-count">0</h1>
               <span>Total Registered</span>
             </div>
             <div class="box-three">
@@ -138,6 +138,18 @@
           // Optionally, redirect to the login page or home page
           window.location.href = "login.html"; // Redirect to login page
         });
+    </script>
+    <script async>
+      window.addEventListener("DOMContentLoaded", () => {
+        let count = parseInt(localStorage.getItem("pendingCount") || "0");
+        document.getElementById("pending-count").textContent = `${count}`;
+      });
+    </script>
+    <script async>
+      window.addEventListener("DOMContentLoaded", () => {
+        let count = parseInt(localStorage.getItem("successCount") || "0");
+        document.getElementById("success-count").textContent = `${count}`;
+      });
     </script>
   </body>
 </html>

@@ -102,5 +102,11 @@ document.querySelectorAll(".register-button").forEach((button) => {
       document.querySelector(".registered-successfully").classList.add("none");
       form.reset();
     }, 2000);
+
+    let count = parseInt(localStorage.getItem("pendingCount") || "0");
+
+    count++;
+
+    localStorage.setItem("pendingCount", count);
   });
 });
