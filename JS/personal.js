@@ -37,5 +37,5 @@ if (fullName && email && userId) {
 }
 
 document.querySelector(".box-one").addEventListener("click", () => {
-  document.location.href = "../register.html";
+  window.location.href = "register.html";
 });
