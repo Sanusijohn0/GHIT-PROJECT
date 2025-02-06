@@ -81,7 +81,7 @@
               <span>Total Registered</span>
             </div>
             <div class="box-three">
-              <h1>0</h1>
+              <h1 id="reciept-count">0</h1>
               <span> Reciepts</span>
             </div>
           </div>
@@ -149,6 +149,12 @@
       window.addEventListener("DOMContentLoaded", () => {
         let count = parseInt(localStorage.getItem("successCount") || "0");
         document.getElementById("success-count").textContent = `${count}`;
+      });
+    </script>
+    <script async>
+      window.addEventListener("DOMContentLoaded", () => {
+        let count = parseInt(localStorage.getItem("recieptsCount") || "0");
+        document.getElementById("reciept-count").textContent = `${count}`;
       });
     </script>
   </body>

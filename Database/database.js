@@ -96,6 +96,11 @@ form.addEventListener("submit", (event) => {
   count++;
 
   localStorage.setItem("successCount", count);
+  let recieptCount = parseInt(localStorage.getItem("recieptsCount") || "0");
+
+  recieptCount++;
+
+  localStorage.setItem("recieptsCount", recieptCount);
 
   const { jsPDF } = window.jspdf;
   const courses = [
@@ -138,7 +143,7 @@ form.addEventListener("submit", (event) => {
 
   const formattedTime = `${hours}_${minutes}_${seconds}`;
 
-  const fileName = `$reciept_${formattedTime}.pdf`;
+  const fileName = `reciept_${formattedTime}.pdf`;
 
   doc.save(fileName);
 });
